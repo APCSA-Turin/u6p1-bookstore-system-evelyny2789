@@ -3,26 +3,53 @@ package com.example.project;
 public class BookStore{
 
     //requires at least 2 attributes Book[] books, User[] users (initialized to an empty array of 10 max users) 
+    Book[] books; 
+    Users[] users = new Users[10]; 
 
     //requires 1 empty constructor
+    public BookStore(){
 
-    // public getUsers(){}
+    }
 
-    // public setUsers(){}
+    public User[] getUsers(){
+        return users; 
+    }
 
-    // public  getBooks(){}
+    public User[] setUsers(User user, int ind){
+        User[ind] = user; 
+    }
 
-    // public void addUser(User user){} 
+    public Book[] getBooks(){
+        return books; 
+    }
 
-    // public void removeUser(User user){}
+    public void addUser(User user){
+        
+    } 
 
-    // public void consolidateUsers(){}
+    public void removeUser(User user){
+        int ind = User.getIndexOf(user); 
+        User[ind] = ""; 
+    }
 
-    // public void addBook(Book book){}
+    public void consolidateUsers(){
+        int ind = Users.indexOf("null"); 
+        if (!Users[ind + 1].equals("null")){
+            Users[ind] =
+        }
+    }
 
-    // public void insertBook(Book book, int index){}
+    public void addBook(Book book){
+        
+    }
 
-    // public void removeBook(Book book){}
+    public void insertBook(Book book, int index){
+        books[index] = book; 
+    }
+
+    public void removeBook(Book book){
+
+    }
        
     // public String bookStoreBookInfo(){} //you are not tested on this method but use it for debugging purposes
 
