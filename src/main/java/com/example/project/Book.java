@@ -17,46 +17,57 @@ public class Book{
         this.quantity = quantity; 
     }
 
+    //returns the title of the book
     public String getTitle(){
         return title; 
     }
 
-    public void String setTitle(String newTitle) {
+    //sets the title to the new title in parameter
+    public void setTitle(String newTitle) {
         title = newTitle; 
     }
 
+    //returns the author of the book
     public String getAuthor(){
         return author; 
     }
-
-    public String void setAuthor(String newAuthor){
+    
+    //sets the author to the new author in the parameter
+    public void setAuthor(String newAuthor){
         author = newAuthor; 
     }
 
+    //returns the year that the book was published
     public int getYearPublished(){
         return yearPublished; 
     }
 
-    public int setYearPublished(int year){
+    //sets the year the book was published to the year in the parameter
+    public void setYearPublished(int year){
         yearPublished = year; 
     }
 
+    //returns the book's isbn
     public String getIsbn(){
         return isbn; 
     }
 
+    //sets the isbn to the one in the parameter
     public void setIsbn(String newIsbn){
         isbn = newIsbn; 
     }
 
+    //returns how many copies of the book there are 
     public int getQuantity(){
         return quantity; 
     }
 
-    public int setQuantity(int quant){
+    //sets the book quantity to the number in the parameter 
+    public void setQuantity(int quant){
         quantity = quant; 
     }
 
+    //returns all the info of the book
     public String bookInfo(){  //returns "Title: [], Author: [], Year: [], ISBN: [], Quantity: []"
         return "Title: " + title + ", Author: " + author + ", Year: " + yearPublished + ", ISBN: " + isbn + ", Quantity: " + quantity; 
     } 
